@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	<name>ExamplePOM</name>
+	<groupId>example</groupId>
+	<artifactId>example.test</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<description>Example POM</description>
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>SmartBearPluginRepository</id>
+			<url>http://smartbearsoftware.com/repository/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.smartbear.soapui</groupId>
+				<artifactId>soapui-maven-plugin</artifactId>
+				<version>5.5.0</version>
+				<executions>
+					<execution>
+						<phase>test</phase>
+						<configuration>
+							<projectFile>customerCustomerRepositoryV1-soapui-project.xml</projectFile>
+							<outputFolder>${project.build.directory}/surefire-reports</outputFolder>
+							<junitReport>true</junitReport>
+							<printReport>false</printReport>
+
+							<reportFormat>PDF</reportFormat>
+
+							<reports>${basedir}/target/surefire-reports</reports>
+
+							<reportName>Project Report</reportName>
+
+
+						</configuration>
+
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>com.jgoodies</groupId>
+						<artifactId>forms</artifactId>
+						<version>1.0.7</version>
+					</dependency>
+
+					<dependency>
+						<groupId>net.sourceforge.jexcelapi</groupId>
+						<artifactId>jxl</artifactId>
+						<version>2.6</version>
+					</dependency>
+					
+					<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.6</version>
+					</dependency>
+
+				</dependencies>
+			</plugin>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+
+			    
+
+		</plugins>
+
+
+
+	</build>
+
+	<reporting>
+		<plugins>
+			<!-- Include the unit test reports in the site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.22.1</version>
+			</plugin>
+			<!-- Include the various project reports in the site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+
+		</plugins>
+	</reporting>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.11</version>
+    <scope>test</scope>
+</dependency>
+
+	</dependencies>
+<properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+
+
+</project>

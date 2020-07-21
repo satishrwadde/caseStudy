@@ -1,0 +1,148 @@
+2020-07-21 12:45:37,835 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:45:38,058 INFO  [log] 2907
+2020-07-21 12:45:40,247 INFO  [log] Rows:7 & columns:5
+2020-07-21 12:45:45,623 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:45:45,690 INFO  [log] 2908
+2020-07-21 12:45:52,906 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:45:52,967 INFO  [log] 2909
+2020-07-21 12:46:00,103 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:00,164 INFO  [log] 2910
+2020-07-21 12:46:07,475 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:07,528 INFO  [log] 2911
+2020-07-21 12:46:14,645 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:14,711 INFO  [log] 2912
+2020-07-21 12:46:17,513 INFO  [log] <Results>
+    <ResultSet fetchSize="0">
+        <Row rowNumber="1">
+            <CUSTOMER.CUST_ID>2</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Sumit</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>sumitrwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="2">
+            <CUSTOMER.CUST_ID>1</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Satish</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>satishrwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="3">
+            <CUSTOMER.CUST_ID>3</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Ansh</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>anshwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="4">
+            <CUSTOMER.CUST_ID>4</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Shilpa</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>shilpaswadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Jalna</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1991-04-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="5">
+            <CUSTOMER.CUST_ID>4</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Naresh</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Budgule</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>nareshbudgule@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Nanded</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1991-04-06</CUSTOMER.DOB>
+        </Row>
+    </ResultSet>
+</Results>
+
+2020-07-21 12:46:17,669 INFO  [log] email >> sumitrwadde@gmail.com :::  firstname >>> Sumit  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:46:23,015 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:23,077 INFO  [log] 2913
+2020-07-21 12:46:24,831 INFO  [log] email >> satishrwadde@gmail.com :::  firstname >>> Satish  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:46:30,097 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:30,155 INFO  [log] 2914
+2020-07-21 12:46:31,800 INFO  [log] email >> anshwadde@gmail.com :::  firstname >>> Ansh  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:46:37,015 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:37,085 INFO  [log] 2915
+2020-07-21 12:46:38,984 INFO  [log] email >> shilpaswadde@gmail.com :::  firstname >>> Shilpa  :::   lastname >>>> Wadde ::: city >>> Jalna   :::   dob  >>>   1991-04-06
+2020-07-21 12:46:44,393 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:44,451 INFO  [log] 2916
+2020-07-21 12:46:46,244 INFO  [log] email >> nareshbudgule@gmail.com :::  firstname >>> Naresh  :::   lastname >>>> Budgule ::: city >>> Nanded   :::   dob  >>>   1991-04-06
+2020-07-21 12:46:51,327 INFO  [log] Total Number of blocks with item :>>>>1301
+2020-07-21 12:46:51,384 INFO  [log] 2917
+2020-07-21 12:53:05,518 INFO  [log] Total Number of blocks with item :>>>>1302
+2020-07-21 12:53:05,670 INFO  [log] 2921
+2020-07-21 12:53:08,272 INFO  [log] Rows:7 & columns:5
+2020-07-21 12:53:14,346 INFO  [log] Total Number of blocks with item :>>>>1303
+2020-07-21 12:53:14,398 INFO  [log] 2924
+2020-07-21 12:53:21,944 INFO  [log] Total Number of blocks with item :>>>>1303
+2020-07-21 12:53:21,994 INFO  [log] 2925
+2020-07-21 12:53:30,068 INFO  [log] Total Number of blocks with item :>>>>1303
+2020-07-21 12:53:30,117 INFO  [log] 2926
+2020-07-21 12:53:37,352 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:53:37,402 INFO  [log] 2928
+2020-07-21 12:53:44,224 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:53:44,275 INFO  [log] 2929
+2020-07-21 12:53:52,940 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:53:52,994 INFO  [log] 2930
+2020-07-21 12:53:54,973 INFO  [log] <Results>
+    <ResultSet fetchSize="0">
+        <Row rowNumber="1">
+            <CUSTOMER.CUST_ID>2</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Sumit</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>sumitrwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="2">
+            <CUSTOMER.CUST_ID>1</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Satish</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>satishrwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="3">
+            <CUSTOMER.CUST_ID>3</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Ansh</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>anshwadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Mangalore</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1987-01-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="4">
+            <CUSTOMER.CUST_ID>4</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Shilpa</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Wadde</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>shilpaswadde@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Jalna</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1991-04-06</CUSTOMER.DOB>
+        </Row>
+        <Row rowNumber="5">
+            <CUSTOMER.CUST_ID>4</CUSTOMER.CUST_ID>
+            <CUSTOMER.FIRSTNAME>Naresh</CUSTOMER.FIRSTNAME>
+            <CUSTOMER.LASTNAME>Budgule</CUSTOMER.LASTNAME>
+            <CUSTOMER.EMAIL>nareshbudgule@gmail.com</CUSTOMER.EMAIL>
+            <CUSTOMER.CITY>Nanded</CUSTOMER.CITY>
+            <CUSTOMER.DOB>1991-04-06</CUSTOMER.DOB>
+        </Row>
+    </ResultSet>
+</Results>
+
+2020-07-21 12:53:55,114 INFO  [log] email >> sumitrwadde@gmail.com :::  firstname >>> Sumit  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:54:00,236 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:54:00,287 INFO  [log] 2931
+2020-07-21 12:54:02,224 INFO  [log] email >> satishrwadde@gmail.com :::  firstname >>> Satish  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:54:07,670 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:54:07,723 INFO  [log] 2932
+2020-07-21 12:54:09,666 INFO  [log] email >> anshwadde@gmail.com :::  firstname >>> Ansh  :::   lastname >>>> Wadde ::: city >>> Mangalore   :::   dob  >>>   1987-01-06
+2020-07-21 12:54:15,375 INFO  [log] Total Number of blocks with item :>>>>1304
+2020-07-21 12:54:15,425 INFO  [log] 2933
+2020-07-21 12:54:17,158 INFO  [log] email >> shilpaswadde@gmail.com :::  firstname >>> Shilpa  :::   lastname >>>> Wadde ::: city >>> Jalna   :::   dob  >>>   1991-04-06
+2020-07-21 12:54:22,577 INFO  [log] Total Number of blocks with item :>>>>1303
+2020-07-21 12:54:22,626 INFO  [log] 2934
+2020-07-21 12:54:24,584 INFO  [log] email >> nareshbudgule@gmail.com :::  firstname >>> Naresh  :::   lastname >>>> Budgule ::: city >>> Nanded   :::   dob  >>>   1991-04-06
+2020-07-21 12:54:30,524 INFO  [log] Total Number of blocks with item :>>>>1303
+2020-07-21 12:54:30,611 INFO  [log] 2935
