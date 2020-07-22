@@ -1566,7 +1566,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1GetByIdRequest>
-         <customerId>3705</customerId>
+         <customerId>3768</customerId>
       </def:customerCustomerRepositoryV1GetByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f8ecb1b5-d169-44ff-b126-71ebf673704c"/><con:assertion type="Simple NotContains" id="ed89409c-b1d5-4546-8835-477859aec3a3" name="Not Contains"><con:configuration><token>Fault</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="955bd031-0dfa-4dce-95ca-a8ab6e529f8b" name="Contains"><con:configuration><token>result</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="entireCustomerList" id="498f1049-4846-43b1-bbf6-daa0e8fa678d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetList</con:operation><con:request name="entireCustomerList" id="ecbe9aa0-d5c7-4bb9-b405-e5fe97bf0fcc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
@@ -1604,12 +1604,16 @@ log.info entireCustList_last_id
 def custSave_Response_id=custSave_holder.getNodeValue("//*:result/id")
 def custById_Response_id=custById_holder.getNodeValue("//*:result/id")
 
+//Pass custSave_Response_id to global property and then use it to update DB in DB related TC
+testRunner.testCase.testSuite.project.testSuites['CustomerRepository TestSuite'].setPropertyValue("custSave_Response_id",custSave_Response_id)
 
 // ----------------> If need do more validation on cust id below 1 line code
 //assert custSave_Response_id == custById_Response_id  : "Customer which was added is different than retrieved!"
 
+
 //To check if the customer id added is present in entire customer list
-assert custSave_Response_id == entireCustList_last_id  : "Customer which was added is not present in entire customer list response!"</script></con:config></con:testStep><con:testStep type="transfer" name="DeleteCustomerId Transfer" id="56f5ebb3-b492-4566-a090-a8ba103bd186"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>CustIdToDelete Trans</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>customerSave</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+assert custSave_Response_id == entireCustList_last_id  : "Customer which was added is not present in entire customer list response!"
+</script></con:config></con:testStep><con:testStep type="transfer" name="DeleteCustomerId Transfer" id="56f5ebb3-b492-4566-a090-a8ba103bd186"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>CustIdToDelete Trans</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>customerSave</con:sourceStep><con:sourcePath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
 declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
 
 
@@ -1620,7 +1624,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1DeleteByIdRequest>
-         <customerId>3705</customerId>
+         <customerId>3768</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="29b604de-d71f-4df7-99d2-fb6302065366"/><con:assertion type="Simple Contains" id="15e43a22-936b-4df1-a851-784807db59e8" name="Contains"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="customerById_ToCheck_ifDeleted" id="a81912e1-daa9-4a05-b7f4-3d54ba60220b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetById</con:operation><con:request name="customerById_ToCheck_ifDeleted" id="98dc8ad6-6296-4350-807a-606fda6876cb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
@@ -1697,6 +1701,9 @@ Workbook wb1=Workbook.createWorkbook(Id_excel)
 WritableSheet excelSheet = wb1.createSheet("IDs",0)
 log.info excelSheet
 </script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e3faceeb-a19a-4674-bc88-76c90be7b824" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Database-System Testing" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="DB_Connection" id="4196e81c-c4f5-46cf-8d83-7b982eac4bf5"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/SDET?user=root&amp;password=root</con:connectionString><con:query>select * from customer</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Data Transfer Using DB" id="e9b12456-05a7-429f-9262-911b8d5d5e79"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
+import groovy.sql.Sql
+
+
 
 def DB_Res_xml= context.testCase.getTestStepByName("DB_Connection").getPropertyValue("ResponseAsXml")
 //def DB_Count_xml= context.testCase.getTestStepByName("result_count").getPropertyValue("ResponseAsXml")
@@ -1729,7 +1736,7 @@ for (def i=1;i&lt;=count;i++){
 			log.info "email >> $email :::  firstname >>> $firstname  :::   lastname >>>> $lastname ::: city >>> $city   :::   dob  >>>   $dob"
 			
 			def tc=testRunner.testCase.testSuite.project.testSuites['CustomerRepository TestSuite'].testCases['Property Expansion &amp; Transfer']
-			
+//			testRunner.testCase.testSuite.project.testSuites['CustomerRepository TestSuite'].setPropertyValue("email_for_cust_IdUpdate",email)
 			tc.testSteps['Customer_Property'].setPropertyValue("email",email)
 			tc.testSteps['Customer_Property'].setPropertyValue("firstname",firstname)
 			tc.testSteps['Customer_Property'].setPropertyValue("lastname",lastname)
@@ -1737,39 +1744,19 @@ for (def i=1;i&lt;=count;i++){
 			tc.testSteps['Customer_Property'].setPropertyValue("dob",dob)
 			
 			def runner=tc.run(null,false)
+
+			def url='jdbc:mysql://localhost:3306/Ecommerce'
+			def driver='com.mysql.jdbc.Driver'
+			def user='root'
+			def password='root'
+			
+			//soapui to talk to database need jdbc driver
+			com.eviware.soapui.support.GroovyUtils.registerJdbcDriver(driver)
+
+			def sql= Sql.newInstance(url,user,password,driver)
+
+			//SQL Query
+			con.execute("update customer set cust_id='$custSave_Response_id' where email ='$email'") 
+
 }
-</script></con:config></con:testStep><con:testStep type="request" name="customerSave" id="43951327-7e51-4d3b-983f-fdb1201d2163" disabled="true"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1Save</con:operation><con:request name="customerSave" id="5896ba1a-a3d6-43e8-a936-72c79a64b228"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
-   <soap:Header/>\r
-   <soap:Body>\r
-      <def:customerCustomerRepositoryV1SaveRequest>\r
-         <customer>\r
-            <!--email should be unique for each request-->\r
-            <email>${DB_Connection#ResponseAsXml#//ResultSet/Row[2]/CUSTOMER.EMAIL}</email>\r
-            <firstname>${DB_Connection#ResultSet/Row[2]/CUSTOMER.FIRSTNAME}</firstname>\r
-            <lastname>${DB_Connection#ResultSet/Row[2]/CUSTOMER.LASTNAME}</lastname>\r
-            <dob>1987-01-06</dob>\r
-            <addresses>\r
-               <item>\r
-                  <region>\r
-                     <!--enter valid region code-->\r
-                     <regionCode>KA</regionCode>\r
-                     <region>Karnataka</region>\r
-                  </region>\r
-                  <!--enter valid country id-->\r
-                  <countryId>IN</countryId>\r
-                  <street>\r
-                     <item>#55, 1 st Main Road</item>\r
-                  </street>\r
-                  <telephone>+91 9876543210</telephone>\r
-                  <postcode>560023</postcode>\r
-                  <city>Mangalore</city>\r
-                  <firstname>John</firstname>\r
-                  <lastname>Doe</lastname>\r
-                  <defaultShipping>true</defaultShipping>\r
-                  <defaultBilling>true</defaultBilling>\r
-               </item>\r
-            </addresses>\r
-         </customer>\r
-      </def:customerCustomerRepositoryV1SaveRequest>\r
-   </soap:Body>\r
-</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="d52a1b75-d45e-4e00-8d5d-d6ab512529ac"/><con:assertion type="Simple NotContains" id="7ac872e5-0bbc-44ee-9697-541a0c702485" name="Not Contains"><con:configuration><token>Fault</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="jdbc" name="DB_Connection_Update_CustId" id="551d9ce6-114a-4954-9db1-bcdbaf53140f" disabled="true"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/SDET?user=root&amp;password=root</con:connectionString><con:query>select * from customer</con:query><con:properties/></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>Authorization</con:name><con:value>bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</script></con:config></con:testStep><con:testStep type="jdbc" name="DB_Connection_Update_CustId" id="551d9ce6-114a-4954-9db1-bcdbaf53140f" disabled="true"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/SDET?user=root&amp;password=root</con:connectionString><con:query>update customer set cust_id='${#TestSuite#custSave_Response_id}' where email ='${#TestSuite#email_for_cust_IdUpdate}' </con:query><con:properties/></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>Authorization</con:name><con:value>bearer f0rf13pxtxp7mftwc23rq6e52yvmi5um</con:value></con:property><con:property><con:name>custSave_Response_id</con:name><con:value>3768</con:value></con:property></con:properties></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
