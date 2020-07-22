@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="d1605001-a174-4c06-8c98-3e7fb02a4771" activeEnvironment="Default" name="customerCustomerRepositoryV1" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="69aaef88-b896-4ec1-8bac-97b3133fa704" wsaVersion="NONE" name="customerCustomerRepositoryV1Binding" type="wsdl" bindingName="{http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1}customerCustomerRepositoryV1Binding" soapVersion="1_2" anonymous="optional" definition="file:/C:/Users/SatishWadde/Desktop/SDET/API%20Testing%20Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/customerCustomerRepositoryV1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\SatishWadde\Desktop\SDET\API%20Testing%20Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\customerCustomerRepositoryV1.xml"><con:part><con:url>file:\C:\Users\SatishWadde\Desktop\SDET\API%20Testing%20Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\customerCustomerRepositoryV1.xml</con:url><con:content><![CDATA[<definitions name="MagentoWSDL" targetNamespace="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+<con:soapui-project id="d1605001-a174-4c06-8c98-3e7fb02a4771" activeEnvironment="Default" name="customerCustomerRepositoryV1" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="69aaef88-b896-4ec1-8bac-97b3133fa704" wsaVersion="NONE" name="customerCustomerRepositoryV1Binding" type="wsdl" bindingName="{http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1}customerCustomerRepositoryV1Binding" soapVersion="1_2" anonymous="optional" definition="file:/C:/Users/SatishWadde/Desktop/SDET/API%20Testing%20Project/SOAP%20API%20WSDL%20EndPoints/SOAP%20API%20WSDL%20EndPoints/customerCustomerRepositoryV1.xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\SatishWadde\Desktop\SDET\API%20Testing%20Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\customerCustomerRepositoryV1.xml"><con:part><con:url>file:\C:\Users\SatishWadde\Desktop\SDET\API%20Testing%20Project\SOAP%20API%20WSDL%20EndPoints\SOAP%20API%20WSDL%20EndPoints\customerCustomerRepositoryV1.xml</con:url><con:content><![CDATA[<definitions name="MagentoWSDL" targetNamespace="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
   <types>
     <xsd:schema targetNamespace="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
       <xsd:element name="GenericFault" type="tns:GenericFault"/>
@@ -1505,7 +1505,7 @@
          <passwordHash>?</passwordHash>\r
       </def:customerCustomerRepositoryV1SaveRequest>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="efb74ac5-cc10-4346-9d76-7e89f163ccc0" name="CustomerRepository TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7f22f3fb-5f87-4564-8b89-b9c27fd50fc8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Property Expansion &amp; Transfer" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer_Property" id="60ae5e8d-ffaa-446b-a3d1-bc5a3be2b000"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>email</con:name><con:value>nareshbudgule@gmail.com</con:value></con:property><con:property><con:name>firstname</con:name><con:value>Naresh</con:value></con:property><con:property><con:name>lastname</con:name><con:value>Budgule</con:value></con:property><con:property><con:name>dob</con:name><con:value>1991-04-06</con:value></con:property><con:property><con:name>city</con:name><con:value>Nanded</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Customer_Property_Transfer" id="9d07c748-eb50-4d8f-8687-14805265d058"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>email trans</con:name><con:sourceType>email</con:sourceType><con:sourceStep>Customer_Property</con:sourceStep><con:sourcePath/><con:targetType>Request</con:targetType><con:targetStep>customerSave</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1/customerCustomerRepositoryV1PortType/customerCustomerRepositoryV1SaveRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="efb74ac5-cc10-4346-9d76-7e89f163ccc0" name="CustomerRepository TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7f22f3fb-5f87-4564-8b89-b9c27fd50fc8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Property Expansion &amp; Transfer" searchProperties="true"><con:settings/><con:testStep type="properties" name="Customer_Property" id="60ae5e8d-ffaa-446b-a3d1-bc5a3be2b000"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>email</con:name><con:value>nikitabismille@gmail.com</con:value></con:property><con:property><con:name>firstname</con:name><con:value>Nikita</con:value></con:property><con:property><con:name>lastname</con:name><con:value>Bismille</con:value></con:property><con:property><con:name>dob</con:name><con:value>2010-04-06</con:value></con:property><con:property><con:name>city</con:name><con:value>Nanded</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Customer_Property_Transfer" id="9d07c748-eb50-4d8f-8687-14805265d058"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>email trans</con:name><con:sourceType>email</con:sourceType><con:sourceStep>Customer_Property</con:sourceStep><con:sourcePath/><con:targetType>Request</con:targetType><con:targetStep>customerSave</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
 declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1';
 
 //*:email</con:targetPath><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>city trans</con:name><con:sourceType>city</con:sourceType><con:sourceStep>Customer_Property</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>customerSave</con:targetStep><con:targetPath>declare namespace soap='http://www.w3.org/2003/05/soap-envelope';
@@ -1528,10 +1528,10 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
       <def:customerCustomerRepositoryV1SaveRequest>
          <customer>
          <!--email should be unique for each request-->
-<email>nareshbudgule@gmail.com</email>
-<firstname>Naresh</firstname>
-<lastname>Budgule</lastname>
-<dob>1991-04-06</dob>
+<email>nikitabismille@gmail.com</email>
+<firstname>Nikita</firstname>
+<lastname>Bismille</lastname>
+<dob>2010-04-06</dob>
 <addresses>
 	<item>
 		<region>
@@ -1566,7 +1566,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1GetByIdRequest>
-         <customerId>2866</customerId>
+         <customerId>3705</customerId>
       </def:customerCustomerRepositoryV1GetByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="f8ecb1b5-d169-44ff-b126-71ebf673704c"/><con:assertion type="Simple NotContains" id="ed89409c-b1d5-4546-8835-477859aec3a3" name="Not Contains"><con:configuration><token>Fault</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" id="955bd031-0dfa-4dce-95ca-a8ab6e529f8b" name="Contains"><con:configuration><token>result</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="entireCustomerList" id="498f1049-4846-43b1-bbf6-daa0e8fa678d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetList</con:operation><con:request name="entireCustomerList" id="ecbe9aa0-d5c7-4bb9-b405-e5fe97bf0fcc"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">\r
@@ -1620,7 +1620,7 @@ declare namespace ns1='http://soap.upskills.in/soap/default?services=customerCus
    <soap:Header/>
    <soap:Body>
       <def:customerCustomerRepositoryV1DeleteByIdRequest>
-         <customerId>2866</customerId>
+         <customerId>3705</customerId>
       </def:customerCustomerRepositoryV1DeleteByIdRequest>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="29b604de-d71f-4df7-99d2-fb6302065366"/><con:assertion type="Simple Contains" id="15e43a22-936b-4df1-a851-784807db59e8" name="Contains"><con:configuration><token>true</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="customerById_ToCheck_ifDeleted" id="a81912e1-daa9-4a05-b7f4-3d54ba60220b"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>customerCustomerRepositoryV1Binding</con:interface><con:operation>customerCustomerRepositoryV1GetById</con:operation><con:request name="customerById_ToCheck_ifDeleted" id="98dc8ad6-6296-4350-807a-606fda6876cb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#TestSuite#Authorization}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
@@ -1677,7 +1677,11 @@ log.info "Last Name: $lname"
 log.info "Date of Birth: $dob"
 log.info "City: $city"
 */
+
 def runner=tc.run(null,false)
+
+// Adding this last log.info just to check update of git &amp; github
+log.info "Test:::IBM"
 
 
 }
@@ -1695,6 +1699,7 @@ log.info excelSheet
 </script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="e3faceeb-a19a-4674-bc88-76c90be7b824" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Database-System Testing" searchProperties="true"><con:settings/><con:testStep type="jdbc" name="DB_Connection" id="4196e81c-c4f5-46cf-8d83-7b982eac4bf5"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.mysql.jdbc.Driver</con:driver><con:connectionString>jdbc:mysql://localhost:3306/SDET?user=root&amp;password=root</con:connectionString><con:query>select * from customer</con:query><con:properties/></con:config></con:testStep><con:testStep type="groovy" name="Data Transfer Using DB" id="e9b12456-05a7-429f-9262-911b8d5d5e79"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
 
 def DB_Res_xml= context.testCase.getTestStepByName("DB_Connection").getPropertyValue("ResponseAsXml")
+//def DB_Count_xml= context.testCase.getTestStepByName("result_count").getPropertyValue("ResponseAsXml")
 
 //get the response customer id to store in DB further
 
@@ -1702,15 +1707,18 @@ def custSave_Res = testRunner.testCase.testSuite.project.testSuites['CustomerRep
 def custSave_holder= new XmlHolder(custSave_Res)
 def custSave_Response_id=custSave_holder.getNodeValue("//*:result/id")
 
-log.info DB_Res_xml
+//log.info DB_Res_xml
 
 def holder=new XmlHolder(DB_Res_xml)
+//def cnt_holder=new XmlHolder(DB_Count_xml)
 def email,firstname,lastname,city,dob
 
-//def count=holder.getNodeValue("//*:Row")
+//def count=cnt_holder.getNodeValue("//*:COUNT")
 //log.info count
+def count =holder.getNodeValue("count(//*:Row)").toInteger()
+log.info count
 
-for (def i=1;i&lt;6;i++){
+for (def i=1;i&lt;=count;i++){
 
 			email=holder.getNodeValue("//*:Row[$i]/CUSTOMER.EMAIL")
 			firstname=holder.getNodeValue("//*:Row[$i]/CUSTOMER.FIRSTNAME")
